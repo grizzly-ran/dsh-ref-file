@@ -1,0 +1,5 @@
+# pnpm 11 project settings: never auto-install @deepseek-ai peers (provided by
+# the dsh runtime / checkout symlinks); tsdown needs esbuild's postinstall.
+allowBuilds:
+  esbuild: true
+autoInstallPeers: false

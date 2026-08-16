@@ -1,0 +1,13 @@
+# dsh-ref-file bundle patch: one host row over the profile root. The client
+# half ships via package.json dsh.client and is served by the modules system.
+
+- insert:
+    - id: ref-file
+      name: 'dsh-ref-file'
+      config:
+        includeContent: true
+        maxBytes: 20000
+        maxIndexedFiles: 5000
+        maxDepth: 8
+        # ignoreExtensions 缺省时使用内置默认列表（图片/视频/音频/压缩/二进制）；
+        # 想自定义排除时在此显式列出（会整体替换默认列表）。
